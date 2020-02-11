@@ -1,0 +1,6 @@
+# Project packages
+wemake-python-styleguide
+Werkzeug
+
+# Per Service packages
+-r app/requirements.txt

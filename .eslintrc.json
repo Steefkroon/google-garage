@@ -1,0 +1,14 @@
+{
+  "extends": ["eslint:recommended", "google", "plugin:vue/recommended"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "indent": 2,
+    "vue/html-indent": 4,
+    "vue/script-indent": 4
+  }
+}
+
