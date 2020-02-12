@@ -13,12 +13,12 @@ class BaseModel(ndb.Model):
     """
 
     @property
-    def integer_id(self):
+    def key_id(self):
         """
         Shorthand method to return the integer_id of the key attribute of the object.
 
         Returns:
-            [int,None]: The id of the key if the object exists in the database, else None.
+            int,None: The id of the key if the object exists in the database, else None.
 
         """
         if self.key:
