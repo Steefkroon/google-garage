@@ -15,9 +15,10 @@ def get_client():
     If in development environment start a client with mock credentials to access a local datastore
     If in production connect to the production datastore based on environment credentials.
     """
-    if os.environ.get('FLASK_ENV', 'production') == 'development':
-        mock_credentials = mock.Mock(spec=credentials.Credentials)
-        return ndb.Client(project='google-garage', credentials=mock_credentials)
+    # if os.environ.get('FLASK_ENV', 'production') == 'development':
+    #     mock_credentials = mock.Mock(spec=credentials.Credentials)
+    #     return ndb.Client(project='google-garage', credentials=mock_credentials)
+
     return ndb.Client()
 
 

@@ -63,4 +63,4 @@ class BaseModel(ndb.Model):
 
         """
         with datastore.client.context():
-            return self.key.delete()
+            self.key.delete()
